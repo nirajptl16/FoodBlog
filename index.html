@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>My Food Blog</title>
+</head>
+<body>
+    <header>
+        <h1>Kp's Personal Cookbook</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="allrecipes.html">All Recipes</a>
+            <a href= "about.html">About Me</a> 
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="hero">
+            <div class="hero-overlay">
+                <h2>Welcome to My Personal Cookbook</h2>
+                <p>A personal collection of my favorite recipes!</p>
+            </div>
+        </section>
+
+            <section class = "featured-recipes">
+                <h2>Featured recipes</h2>
+                    <div class = "recipe-grid">
+                        <div class = "recipe-card">
+                        <img src="./images/shahipaneer.jpg" alt = "Shahi paneer image">
+                            <div class = "recipe-content">
+                                <h3>Shahi paneer</h3>
+                                <p class = "recipe-meta">
+                                    <i class="fa-regular fa-clock"></i> 30 mins</p>
+                                <a href="./recipes/shahipaneer.html" class="view-recipe-btn">View Recipe</a>
+                            </div>  
+                        </div>
+
+                        <div class = "recipe-card">
+                            <img src = "./images/pawbhaji.jpg" alt = "Paw Bhaji image">
+                            <div class = "recipe-content">
+                                <h3>Paw Bhaji</h3>
+                                <p class = "recipe-meta">
+                                    <i class="fa-regular fa-clock"></i> 30 mins</p>
+                                <a href="./recipes/pawbhaji.html" class="view-recipe-btn">View Recipe</a>
+                            </div>
+                        </div>
+
+                        <div class = "recipe-card">
+                            <img src="./images/enchiladas.jpg" alt="Enchiladas images">
+                            <div class = "recipe-content">
+                                <h3>Enchiladas</h3>
+                                <p class = "recipe-meta"> 
+                                    <i class="fa-regular fa-clock"></i> 15-20 mins</p>
+                                <a href="./recipes/enchiladas.html" class="view-recipe-btn">View Recipe</a>
+                            </div>
+                        </div>  
+
+                    </div>
+                
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Food Blog</p>
+        <p>Cooked this with Html and Css</p>
+    </footer>
+</body>
+</html>
