@@ -37,4 +37,22 @@ function filterRecipes(category){
     });
 }
 
+filterbuttons.forEach(function(button){
+    button.addEventListener('click', function(){
+        filterbuttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        const category = this.getAttribute('data-category')|| this.textContent;
+        filterRecipes(category);
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
