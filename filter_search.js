@@ -34,7 +34,8 @@ function filterRecipes(category){
         else {
             card.style.display = 'none';
         }
-
     });
 }
+
+searchBox.addEventListener('input', searchRecipes);
 
