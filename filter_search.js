@@ -37,5 +37,4 @@ function filterRecipes(category){
     });
 }
 
-searchBox.addEventListener('input', searchRecipes);
 

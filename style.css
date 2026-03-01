@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Back to Top Button */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(8, 136, 72);
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
@@ -57,8 +45,8 @@ nav a {
 
 
 nav a:hover{
-    background-color: #e0e0e0;
-
+    background-color: rgb(83, 85, 83);
+    color: white;
     transform: translateY(2px);
 }
 
@@ -100,10 +88,10 @@ nav a:hover{
 
 .featured-recipes h2{
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: 'Zalando Sans Expanded', cursive;
-    font-weight: 500;
-
+    font-weight: 700;
+    text-align: center;
 }
 
 .recipe-grid{
@@ -125,7 +113,6 @@ nav a:hover{
 
 .recipe-card:hover {
     transform: translateY(-10px);
-    
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
@@ -136,10 +123,11 @@ nav a:hover{
     display: block;
 }
 
+
 .recipe-card h3{
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Arial', cursive;
+    font-family: 'Zalando Sans Expanded', cursive;
 }
 
 .recipe-content{
@@ -259,12 +247,6 @@ footer{
     transform: translateY(-5px);
 }
 
-@media (max-width:768px){
-    .recipe-container{
-        flex-direction:column;
-    }
-}
-
 .ingredients h2, .instructions h2{
     font-size:3rem;
     text-align:center;
@@ -303,3 +285,77 @@ footer{
 }
 
 
+@media (max-width:768px){
+    .recipe-container{
+        flex-direction:column;
+    }
+    
+    /* Header fixes */
+    header h1{
+        font-size: 1.8rem;
+    }
+    
+    /* Navigation fixes */
+    nav a {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero section fixes */
+    .hero {
+        height: auto;
+        min-height: 400px;
+        padding: 2rem 1rem;
+    }
+    
+    .hero h2{
+        font-size: 2.5rem;
+    }
+    
+    .hero p{
+        font-size: 1.1rem;
+    }
+    
+    /* Recipe grid fixes */
+    .recipe-grid{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .recipe-card img{
+        height: 200px;
+    }
+    
+    /* Recipe info fixes */
+    .recipe-info h2{
+        font-size: 2.5rem;
+    }
+    
+    .recipe-image img{
+        height: 200px;
+    }
+    
+    /* Ingredients and Instructions */
+    .ingredients h2, .instructions h2{
+        font-size: 2rem;
+    }
+    
+    .instructions ol{
+        padding-left: 25px;
+        font-size: 1rem;
+    }
+    
+    .ingredients-list{
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    /* Button fixes */
+    .view-recipe-btn, .view-recipe-btn-all{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
